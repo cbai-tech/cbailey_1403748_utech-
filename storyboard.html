@@ -1,0 +1,363 @@
+<!--
+    Name: Clive Bailey
+    ID: 1403748
+    Day/Time of class: Wednesday 5-8
+    Module: CIT2011
+    Assignment: IA #1.5
+-->
+
+<!DOCTYPE html>
+<!-- This tells the browser that this document is written in HTML5 -->
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Allows the webpage to adjust properly on mobile and desktop screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the title that appears on the browser tab -->
+    <title>Storyboard | My Portfolio</title>
+
+    <!-- Links this HTML file to the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This header contains the logo, website title, and navigation menu -->
+    <header class="site-header">
+
+        <!-- This div groups the logo and portfolio title together -->
+        <div class="logo-area">
+            <!-- Displays the website logo -->
+            <img src="Assets/logo.png" alt="CB portfolio logo" class="logo">
+
+            <!-- Displays the website title -->
+            <h1>My Portfolio</h1>
+        </div>
+
+        <!-- This navigation bar links to the different pages of the portfolio website -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="personality.html">Personality</a>
+            <a href="development.html">Development</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <!-- This will contain the main content of the storyboard page -->
+    <main>
+
+        <!-- This section will introduce the purpose of the storyboard page -->
+        <section class="content-section">
+            <h2>Storyboard and Design Plan</h2>
+
+            <p>
+                This storyboard presents the planned design for my personal portfolio website.
+                It shows how the website will be arranged on desktop and mobile screens.
+                It also includes the colour palette, typography, image dimensions, layout groups,
+                navigation plan, GitHub repository link, hosting link, and storyboard PDF link.
+            </p>
+
+            <p>
+                The purpose of this storyboard is to guide the development of the website before
+                and during coding. It helps ensure that the final webpages match the planned
+                layout and maintain a consistent design theme.
+            </p>
+        </section>
+
+        <!-- This section will display and explains the desktop wireframe -->
+        <section class="content-section">
+            <h2>Desktop Layout Design</h2>
+
+            <p>
+                The desktop layout is designed for screens with a minimum width of 950px.
+                In this layout, the logo and website title are placed on the left side of the
+                header, while the navigation menu is placed on the right side.
+            </p>
+
+            <p>
+                The welcome section uses a two-column layout. The welcome message and button
+                appear on one side, while the profile image appears on the other side. The
+                demographic information and favourite things sections use card-style layouts
+                to keep the information neat and easy to read.
+            </p>
+
+            <!-- This figure displays the desktop wireframe image -->
+            <figure>
+                <img src="Assets/wireframe-desktop.jpg" alt="Desktop wireframe layout for the portfolio website">
+
+                <figcaption>
+                    Desktop layout showing the logo, navigation bar, welcome section, profile image,
+                    demographic cards, about section, favourite things cards, and contact section.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- This section will display and explains the mobile wireframe -->
+        <section class="content-section">
+            <h2>Mobile Layout Design</h2>
+
+            <p>
+                The mobile layout is designed for screens with a minimum width of 600px.
+                This layout uses a simplified structure so the content is easier to read on
+                smaller screens. The logo is placed at the top, and the menu icon represents
+                the mobile navigation area.
+            </p>
+
+            <p>
+                The welcome message, button, and profile image are placed near the top of the
+                page. The demographic information cards are arranged in a smaller layout, while
+                the About Me, Favourite Things, and Contact Information sections are stacked
+                vertically.
+            </p>
+
+            <!-- Figure displays the mobile wireframe image -->
+            <figure>
+                <img src="Assets/wireframe-mobile.jpg" alt="Mobile wireframe layout for the portfolio website">
+
+                <figcaption>
+                    Mobile layout showing the logo, menu, welcome message, profile image,
+                    demographic cards, about section, favourite things, and contact information.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- This section explains the main div and layout groups used in the website -->
+        <section class="content-section">
+            <h2>Layout Groups and Div Structure</h2>
+
+            <p>
+                The website layout is divided into clear groups so that each part of the page
+                can be organized and styled properly using CSS.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Header group:</strong> Contains the logo, website title, and navigation menu.
+                </li>
+
+                <li>
+                    <strong>Logo area:</strong> Groups the website logo and the portfolio title together.
+                </li>
+
+                <li>
+                    <strong>Navigation group:</strong> Contains links to the Home, Resume, Personality,
+                    Development, Storyboard, and References pages.
+                </li>
+
+                <li>
+                    <strong>Hero group:</strong> Contains the welcome message, call-to-action button,
+                    and profile image.
+                </li>
+
+                <li>
+                    <strong>Demographic group:</strong> Contains cards with personal, academic, and career information.
+                </li>
+
+                <li>
+                    <strong>About group:</strong> Contains a short description about me.
+                </li>
+
+                <li>
+                    <strong>Favourite things group:</strong> Contains cards for favourite book, movie,
+                    and technology area.
+                </li>
+
+                <li>
+                    <strong>Contact group:</strong> Contains email, GitHub, and location information.
+                </li>
+
+                <li>
+                    <strong>Footer group:</strong> Contains copyright information.
+                </li>
+            </ul>
+        </section>
+
+        <!-- This section will display the colour palette image and explain the colours -->
+        <section class="content-section">
+            <h2>Colour Palette</h2>
+
+            <p>
+                The website uses a professional colour palette with dark blue, sky blue,
+                light grey, white, and dark blue-grey. This colour scheme was selected
+                because it gives the portfolio a clean, modern, and technology-focused appearance.
+            </p>
+
+            <!-- Figure displays the selected colour palette image -->
+            <figure>
+                <img src="Assets/color-palette.png" alt="Website colour palette showing navy blue, sky blue, light grey, white, and dark blue grey">
+
+                <figcaption>
+                    Colour palette selected for the personal portfolio website.
+                </figcaption>
+            </figure>
+
+            <!-- This table lists the RGB values and purpose of each colour -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Colour Name</th>
+                        <th>RGB Value</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Navy Blue</td>
+                        <td>rgb(15, 23, 42)</td>
+                        <td>Header, footer, headings, and strong text</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sky Blue</td>
+                        <td>rgb(56, 189, 248)</td>
+                        <td>Buttons, links, highlights, and hover effects</td>
+                    </tr>
+
+                    <tr>
+                        <td>Light Grey</td>
+                        <td>rgb(241, 245, 249)</td>
+                        <td>Page background</td>
+                    </tr>
+
+                    <tr>
+                        <td>White</td>
+                        <td>rgb(255, 255, 255)</td>
+                        <td>Content sections and cards</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dark Blue Grey</td>
+                        <td>rgb(51, 65, 85)</td>
+                        <td>Paragraph text and supporting information</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- This section will explain the font choices used for the website -->
+        <section class="content-section">
+            <h2>Typography</h2>
+
+            <p>
+                The typography is simple and readable. This helps users clearly understand
+                the information on both mobile and desktop screens.
+            </p>
+
+            <ul>
+                <li><strong>Font family:</strong> Arial, Helvetica, sans-serif</li>
+                <li><strong>Root font weight:</strong> 400</li>
+                <li><strong>Heading font weight:</strong> 700</li>
+                <li><strong>Body text size:</strong> 16px</li>
+                <li><strong>Main heading size:</strong> 32px</li>
+                <li><strong>Section heading size:</strong> 24px</li>
+            </ul>
+        </section>
+
+        <!-- This section lists the images, icons, and planned dimensions -->
+        <section class="content-section">
+            <h2>Images, Icons, and Dimensions</h2>
+
+            <p>
+                All images and media files will be stored inside the Assets folder.
+                Each image will include an alt attribute to improve accessibility.
+            </p>
+
+            <ul>
+                <li><strong>Logo file:</strong> logo.png</li>
+                <li><strong>Logo dimensions:</strong> 60px by 60px</li>
+                <li><strong>Profile image dimensions:</strong> 300px by 300px</li>
+                <li><strong>Desktop wireframe file:</strong> wireframe-desktop.jpg</li>
+                <li><strong>Mobile wireframe file:</strong> wireframe-mobile.jpg</li>
+                <li><strong>Colour palette file:</strong> color-palette.png</li>
+                <li><strong>Icons:</strong> Simple portfolio, technology, and cybersecurity-style icons</li>
+            </ul>
+        </section>
+
+        <!-- This section will explain the navigation structure of the website -->
+        <section class="content-section">
+            <h2>Navigation Plan</h2>
+
+            <p>
+                The navigation bar appears at the top of every webpage. It allows users to
+                move easily between the main pages of the portfolio website.
+            </p>
+
+            <ul>
+                <li><strong>Home:</strong> Introduces the portfolio and includes demographic information.</li>
+                <li><strong>Resume:</strong> Presents education, skills, professional experience, mission, and vision.</li>
+                <li><strong>Personality:</strong> Discusses personality traits, hobbies, hero or mentor, and AI business idea.</li>
+                <li><strong>Development:</strong> Includes reflections on Chapters 4 to 7 of <em>Twelve Pillars</em>.</li>
+                <li><strong>Storyboard:</strong> Displays the design plan, wireframes, colour palette, and project links.</li>
+                <li><strong>References:</strong> Lists the sources used in APA format.</li>
+            </ul>
+        </section>
+
+        <!-- This section explains how the website will respond on different screen sizes -->
+        <section class="content-section">
+            <h2>Responsive Design Plan</h2>
+
+            <p>
+                The website will use CSS media queries to adjust the layout for different
+                screen sizes. This will make the website usable on mobile, tablet, and desktop screens.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Mobile layout, 600px and above:</strong> Content is stacked vertically,
+                    and cards are arranged in a simple layout for easier reading.
+                </li>
+
+                <li>
+                    <strong>Desktop layout, 950px and above:</strong> The header becomes wider,
+                    the navigation appears horizontally, and content cards are arranged in columns.
+                </li>
+
+                <li>
+                    <strong>Layout method:</strong> CSS Flexbox and CSS Grid will be used to create
+                    organized and responsive sections.
+                </li>
+            </ul>
+        </section>
+
+        <!-- This section includes the required project links -->
+        <section class="content-section">
+            <h2>Project Links</h2>
+
+            <p>
+                These links will direct yo to the relevant website for this portfolio.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>GitHub Repository:</strong>
+                    <a href="https://github.com/cbai-tech/-cbailey_1403748_utech-" target="_blank">View My GitHub Repository</a>
+                </li>
+
+                <li>
+                    <strong>Free Hosting Link:</strong>
+                    <a href="https://cbai-tech.github.io/-cbailey_1403748_utech-/" target="_blank">View My Hosted Website</a>
+                </li>
+
+                <li>
+                    <strong>Free Hosting Link:</strong>
+                    <a href="../Assets/storyboard-1403748.pdf" target="_blank">View Storyboard PDF</a>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer: This appears at the bottom of the page and contains copyright details -->
+    <footer>
+        <p>&copy; 2026 Clive Bailey. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
