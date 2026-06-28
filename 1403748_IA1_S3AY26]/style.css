@@ -1,0 +1,542 @@
+/*
+    Name: Clive Bailey
+    ID: 1403748
+    Day/Time of class: Wednesday 5-8
+    Module: CIT2011
+    Assignment: IA #1 CSS
+*/
+
+/* 
+   Main stylesheet for the portfolio website.
+   This file will control the colours, spacing, layout, responsiveness, and simple animations.
+*/
+
+/* CSS variables for consistent colours and fonts */
+:root {
+    --primary-color: rgb(15, 23, 42);
+    --accent-color: rgb(56, 189, 248);
+    --background-color: rgb(241, 245, 249);
+    --card-color: rgb(255, 255, 255);
+    --text-color: rgb(51, 65, 85);
+    --border-color: rgb(203, 213, 225);
+    --font-main: Arial, Helvetica, sans-serif;
+}
+
+/* Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Makes images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General link styling */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Hover pseudo-class for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Focus pseudo-class for accessibility */
+a:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+/* Header area */
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+/* Logo and title group */
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+/* Logo image */
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Navigation menu */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navigation links */
+.navbar a {
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation hover effect */
+.navbar a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Main page container */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* General content box */
+.content-section,
+.hero-section {
+    background-color: var(--card-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+/* Section headings */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Smaller headings */
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 12px;
+}
+
+/* Lists */
+ul,
+ol {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/* List items */
+li {
+    margin-bottom: 8px;
+}
+
+/* Home page hero section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profile image */
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 80%;
+    border: 4px solid var(--accent-color);
+}
+
+/* Used to align the image and text to the right*/
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button-style link */
+.button-link {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Button hover animation */
+.button-link:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+/* Grid for cards */
+.info-grid,
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Card styling */
+.info-card,
+.favourite-card,
+.trait-card,
+.resume-item,
+.layout-box,
+.wireframe-card {
+    background-color: var(--background-color);
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+/* Simple hover animation for cards */
+.info-card:hover,
+.favourite-card:hover,
+.trait-card:hover,
+.resume-item:hover,
+.layout-box:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+}
+
+/* Resume header */
+.resume-header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Makes resume header heading white */
+.resume-header h2 {
+    color: white;
+}
+
+/* Blockquote styling */
+blockquote {
+    background-color: var(--background-color);
+    border-left: 5px solid var(--accent-color);
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table cells */
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table heading */
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Storyboard wireframe boxes */
+.wire-box {
+    border: 2px dashed var(--primary-color);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Mobile wireframe layout */
+.mobile-wireframe {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop wireframe layout */
+.desktop-wireframe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive layout for 600px and above */
+@media screen and (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info-grid,
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive layout for 950px and above */
+@media screen and (min-width: 950px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-area {
+        margin-bottom: 0;
+    }
+
+    .hero-section {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .hero-text,
+    .hero-image {
+        flex: 1;
+    }
+
+    .info-grid,
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .desktop-wireframe {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header-box,
+    .footer-box {
+        grid-column: 1 / 4;
+    }
+
+    .hero-left {
+        grid-column: 1 / 3;
+    }
+
+    .hero-right {
+        grid-column: 3 / 4;
+    }
+}
+
+
+/* STORYBOARD PAGE STYLING (Added last) */
+
+
+/* Styles the main storyboard content sections */
+.content-section {
+    background-color: var(--card-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+/* This will add neat/organized spacing to each storyboard section heading */
+.content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* This will style the smaller headings inside the storyboard sections */
+.content-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* This will control the paragraph spacing inside the storyboard sections */
+.content-section p {
+    margin-bottom: 12px;
+}
+
+/* Used to style unordered lists used for my storyboard explanations */
+.content-section ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/* Used to add spacing between the listed items */
+.content-section li {
+    margin-bottom: 8px;
+}
+
+/* STORYBOARD IMAGE STYLING */
+
+/* Style the figures that hold wireframe and colour palette images */
+figure {
+    margin: 25px 0;
+    text-align: center;
+}
+
+/* Styles all images inside storyboard figures */
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: white;
+    padding: 8px;
+}
+
+/* Makes the wireframe images easier to view */
+figure img[src*="wireframe"] {
+    max-width: 850px;
+}
+
+/* Makes the colour palette image fit properly on the page */
+figure img[src*="color-palette"] {
+    max-width: 500px;
+}
+
+/* Styles the caption that is below the storyboard images */
+figcaption {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+
+/* COLOUR PALETTE TABLE */
+
+/* Styles the storyboard colour palette table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+/* Styles table heading and table data cells */
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styles the table heading row */
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Adds a light background to every even table row */
+tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+
+/* STORYBOARD LAYOUT GROUPS */
+
+
+/* Styles the layout group explanation boxes */
+.layout-box {
+    background-color: var(--background-color);
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Adds hover effect to layout boxes */
+.layout-box:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+}
+
+
+/* Project links section */
+
+
+/* Makes project links cleaner and easier to read */
+.content-section a {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Adds hover effect to storyboard links */
+.content-section a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Focus effect for keyboard accessibility */
+.content-section a:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+/* Deals with the responsiveness for mobile */
+
+/* Adjusts storyboard layout for screens 600px and wider */
+@media screen and (min-width: 600px) {
+    figure img[src*="wireframe"] {
+        max-width: 750px;
+    }
+
+    figure img[src*="color-palette"] {
+        max-width: 650px;
+    }
+}
+
+
+/* Deals with the responsiveness for desktop */
+
+
+/* Adjusts storyboard layout for desktop screens 950px and wider */
+@media screen and (min-width: 950px) {
+    figure img[src*="wireframe"] {
+        max-width: 900px;
+    }
+
+    figure img[src*="color-palette"] {
+        max-width: 750px;
+    }
+
+    .content-section {
+        padding: 30px;
+    }
+}

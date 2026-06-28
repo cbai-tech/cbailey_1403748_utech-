@@ -1,0 +1,190 @@
+<!--
+    Name: Clive Bailey
+    ID: 1403748
+    Day/Time of class: Wednesday 5-8
+    Module: CIT2011
+    Assignment: IA #1.1
+-->
+
+<!DOCTYPE html>
+<!-- Tells the browser that this document is written in HTML5 -->
+<html lang="en">
+
+<head>
+    <!-- Tells the browser what character set is to be used for this webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Allows the webpage to adjust properly on mobile and desktop screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the title that appears on the browser tab -->
+    <title>Home | My Portfolio</title>
+
+    <!-- Links this HTML file to the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This header contains the logo, website title, and navigation menu -->
+    <header class="site-header">
+        <!-- This div groups the logo and portfolio title together -->
+        <div class="logo-area">
+            <img src="Assets/logo.png" alt="Portfolio logo" class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+
+
+        <!-- This navigation bar links to the different pages/sections of the portfolio website -->
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="personality.html">Personality</a>
+            <a href="development.html">Development</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <!-- The main tag contains the primary content of the page -->
+    <main>
+        <!-- This hero section introduces the website and includes a profile image -->
+        <section class="hero-section" id="top">
+            <!-- This article contains the main welcome text -->
+            <article class="hero-text">
+                <h2>Welcome to My Personal Portfolio</h2>
+                <p>
+                    This portfolio website introduces who I am, my academic goals, 
+                    professional interests, personality, personal development reflections, 
+                    and future career plans.
+                </p>
+
+                <!-- This bookmark link takes the user to the contact section of my portfolio website -->
+                <a href="#contact" class="button-link">Go to Contact Section</a>
+            </article>
+
+            <!-- This aside contains the profile image and email link -->
+            <aside class="hero-image">
+                <!-- The profile image links to the local mail client using mailto -->
+                <a href="mailto:cliveabailey@students.utech.edu.jm">
+                    <img src="Assets/profile.jpeg" alt="A professional image of myself">
+                </a>
+                <p>Click the image to email me.</p>
+            </aside>
+        </section>
+
+        <!-- This section displays basic demographic information about me -->
+        <section class="content-section">
+            <h2>Demographic Information</h2>
+
+            <!-- This grid groups the demographic information into separate cards -->
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Name</h3>
+                    <p>Clive Bailey</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Institution</h3>
+                    <p>University of Technology, Jamaica</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Programme</h3>
+                    <p>BSc. Computer Networking and Security</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Major</h3>
+                    <p>Cybersecurity</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Student ID</h3>
+                    <p>1403748</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Career Interest</h3>
+                    <p>Cybersecurity, ethical hacking, networking, and systems administration.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- This section provides a short introduction about me -->
+        <section class="content-section">
+            <h2>About Me</h2>
+            <p>
+                I am a motivated university student in my final year with a strong interest in cybersecurity, 
+                networking, and technology. I enjoy learning how systems work, how they can be 
+                protected, and how technology can be used to solve real-world problems.
+            </p>
+
+            <p>
+                My academic journey has helped me develop technical, problem-solving, and 
+                communication skills. Through this portfolio, I will present my goals, values, 
+                personality, professional development, and creative ideas.
+            </p>
+        </section>
+
+        <!-- This section uses a card-style content to list some of my favourite items -->
+        <section class="content-section favourites-section">
+
+            <h2>My Favourite Things</h2>
+
+            <!-- This container groups the favourite item cards -->
+            <div class="card-container">
+                <article class="favourite-card">
+                    <h3>Favourite Book</h3>
+                    <p><strong>Title:</strong> The Ranger's Apprentice</p>
+                    <p>
+                        This book series is about an orphaned teenager named Will, who is 
+			chosen to apprentice under a grim, secretive Ranger, ultimately transforming 
+			from a small outcast into an elite archer who protects the Kingdom of Araluen 
+			from invaders, traitors, and dark threats.
+                    </p>
+                </article>
+
+                <article class="favourite-card">
+                    <h3>Favourite Movie</h3>
+                    <p><strong>Title:</strong> Harry Potter Series</p>
+                    <p>
+			This series follows an orphaned boy who discovers he is a wizard, attends a magical school, 
+			and unites with his friends to defeat the dark wizard responsible for his parents' deaths.
+
+                    </p>
+                </article>
+
+                <article class="favourite-card">
+                    <h3>Favourite Area of Technology</h3>
+                    <p><strong>Topic:</strong> Cybersecurity</p>
+                    <p>
+                        Cybersecurity interests me because it focuses on protecting systems, 
+                        networks, and data from digital threats.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- This section is for contact details it will provide my email, GitHub, and location information -->
+        <section class="content-section" id="contact">
+            <h2>Contact Information</h2>
+
+            <!-- This unordered list displays my contact information -->
+            <ul>
+                <li>Email: <a href="mailto:cliveabailey@students.utech.edu.jm">cliveabailey@students.utech.edu.jm</a></li>
+                <li>GitHub: <a href="https://github.com/cbai-tech" target="_blank">Visit My GitHub</a></li>
+                <li>Location: Jamaica</li>
+            </ul>
+
+            <!-- This internal bookmark link takes the user back to the top of the page -->
+            <p><a href="#top">Back to top</a></p>
+        </section>
+    </main>
+
+    <!-- Footer appears at the bottom of the page and contains copyright details -->
+    <footer>
+        <p>&copy; 2026 Clive Bailey. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
